@@ -1,5 +1,5 @@
-var deckStart = {x: 10, y: 10};
-var handStart = {x: 10, y: 210};
+var deckStart = {x: 5, y: 10};
+var handStart = {x: 5, y: 210};
 
 /*
 This function clears this screen by filling it with a rectangle the same colour as the background and same size of the canvas.
@@ -29,11 +29,9 @@ function drawCards(cards, startVector) {
     function drawCard(item, index) {        
         var img = new Image();
         img.src = item.getFilePath();
+        console.log(img.src);
         ctx.drawImage(img, x, y);
-        x += 20;
-    }
-    
-    for(var i = 0; i < 52; i++) {
+        x += 30;
     }
 }
 

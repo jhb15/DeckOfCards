@@ -18,21 +18,27 @@ window.onload = function() {
 
   document.getElementById("gameCanvas").style.backgroundColor = backCol;
  
-  
+  startGame();
 }
 
 function startGame() {
-    
-    deck = new Deck(true);
-    hand = new Deck(false);
-    
-    console.log("I am here");
-    //initDeck();
-    draw();
+  console.log("Game Started!");
+  
+  deck = new Deck(true);
+  hand = new Deck(false);
+  draw();
 }
 
 function drawCards() {
     
+}
+
+function shuffleCards() {
+
+}
+
+function orderHand() {
+
 }
 
 function resetGame() {
