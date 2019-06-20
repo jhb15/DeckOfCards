@@ -1,6 +1,3 @@
-var deckStart = {x: 5, y: 10};
-var handStart = {x: 5, y: 210};
-
 /*
 This function clears this screen by filling it with a rectangle the same colour as the background and same size of the canvas.
 */

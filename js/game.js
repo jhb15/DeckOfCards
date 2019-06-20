@@ -1,8 +1,3 @@
-var backCol = "#088A08";
-
-var deck;
-var hand;
-
 window.onload = function() {
     
     console.log("I am here");
@@ -18,7 +13,7 @@ window.onload = function() {
 
   document.getElementById("gameCanvas").style.backgroundColor = backCol;
  
-  //startGame();
+  startGame();
 }
 
 function startGame() {
