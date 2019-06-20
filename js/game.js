@@ -18,7 +18,7 @@ window.onload = function() {
 
   document.getElementById("gameCanvas").style.backgroundColor = backCol;
  
-  startGame();
+  //startGame();
 }
 
 function startGame() {
@@ -30,11 +30,18 @@ function startGame() {
 }
 
 function drawCards() {
-    
+    var number = prompt("How many cards do you wish to draw?", "1");
+    var count = parseInt(number);
+    for(var i = 0; i < count; i++) {
+      var card = deck.drawCard();
+      hand.addCard(card);
+    }
+    draw();
 }
 
-function shuffleCards() {
-
+function shuffleDeckCards() {
+  deck.shuffle();
+  draw();
 }
 
 function orderHand() {
@@ -42,7 +49,7 @@ function orderHand() {
 }
 
 function resetGame() {
-    
+  startGame();
 }
 
 function stopGame() {

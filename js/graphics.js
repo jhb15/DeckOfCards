@@ -13,25 +13,24 @@ function clear() {
 This function draws everything to the canvas by calling various functions.
 */
 function draw() {
+  console.log("Drawing Cards");
   clear();
-    console.log("I am here");
-  drawCards(deck.cards, deckStart);
-  drawCards(hand.cards, handStart);
+  drawCardsToCanvas(deck.cards, 5, 10);
+  drawCardsToCanvas(hand.cards, 5, 210);
 }
 
-function drawCards(cards, startVector) {
-    var x = startVector.x; var y = startVector.y;
+function drawCardsToCanvas(cards, x, y) {
     
     console.log("Length of Card Array: " + cards.length);
     
     cards.forEach(drawCard);
     
-    function drawCard(item, index) {        
-        var img = new Image();
-        img.src = item.getFilePath();
-        console.log(img.src);
-        ctx.drawImage(img, x, y);
-        x += 30;
+    function drawCard(item, index) {
+      var img = new Image();
+      img.src = item.getFilePath();
+      console.log(img.src);
+      ctx.drawImage(img, x, y);
+      x += 35;
     }
 }
 
