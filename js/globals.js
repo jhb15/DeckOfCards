@@ -7,7 +7,7 @@ var deckStart = {x: 5, y: 10};
 var handStart = {x: 5, y: 210};
 
 var CardValue = [
-    {str: "A", val: 1},
+    {str: "A", val: 14},
     {str: "2", val: 2},
     {str: "3", val: 3},
     {str: "4", val: 4},
