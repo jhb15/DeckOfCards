@@ -27,6 +27,12 @@ function startGame() {
 function drawCards() {
     var number = prompt("How many cards do you wish to draw?", "1");
     var count = parseInt(number);
+
+    if (count > deck.size()) {
+      alert("Error not enough cards in deck to make the requested draw!");
+      return;
+    }
+
     for(var i = 0; i < count; i++) {
       var card = deck.drawCard();
       hand.addCard(card);

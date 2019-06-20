@@ -76,6 +76,10 @@ class Deck {
             return 0;
           });
     }
+
+    size() {
+        return this.cards.length
+    }
 }
 
 class Card {
