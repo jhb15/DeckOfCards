@@ -45,7 +45,8 @@ function shuffleDeckCards() {
 }
 
 function orderHand() {
-
+  hand.sort();
+  draw();
 }
 
 function resetGame() {

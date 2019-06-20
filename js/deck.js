@@ -82,11 +82,22 @@ class Deck {
         }
     }
 
-    /**
-     * This function will order cards by value and then suit.
-     */
-    order() {
-
+    sort() {
+        this.cards.sort(function(a, b) {
+            if (a.suit.val < b.suit.val) {
+                return -1;
+            }
+            if (a.suit.val > b.suit.val) {
+                return 1;
+            }
+            if (a.value.val < b.value.val) {
+                return -1;
+            }
+            if (a.value.val > b.value.val) {
+                return 1;
+            }
+            return 0;
+          });
     }
 }
 
