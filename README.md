@@ -5,7 +5,7 @@ This was developed using Javascript and the HTML 5 canvas tag.
 #### To Run Deck of Cards
 
 >
->> Step 1: clone the github repository, you can do this by navigating to the directory in which you want to store the repository and running this command in the terminal. 'git clone git@github.com:jhb15/DeckOfCards.git'.
+>> Step 1: clone the github repository, you can do this by navigating to the directory in which you want to store the repository and running this command in the terminal. `git clone git@github.com:jhb15/DeckOfCards.git`
 >
 >> Step 2: Now to run the game it is pretty simple, all you need to do is open the index.html file in a web browser (Developed using Firefox).
 >
@@ -23,3 +23,7 @@ For this game I have used 4 buttons on the we page to allow all possible actions
 >
 >> **Reset** - This button resets everything back to the begining.
 >
+
+#### How To Run Tests
+
+At the moment the tests are not implemented, but I plan to add thos using [jasmine](https://jasmine.github.io/).
